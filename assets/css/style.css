@@ -1,11 +1,7 @@
 html, body {
-	padding: 0;
-	margin: 0;
-	color: white;
-}
 
-* {
-	box-sizing: border-box;
+	margin: 0;
+	background-color: #ccc;
 }
 
 a {
@@ -19,93 +15,142 @@ a {
 		border-bottom-color: transparent;
 	}
 
-li {
+ul {
+
+	padding: 0;
 	list-style: none;
+}
+
+ul li {
+
+	padding: 0px 30px 0px 0px;
+	display: inline-block;
 }
 
 p {
 	font-family: "Montserrat", sans-serif;
 }
 
-footer {
-	display: flex;
-	font-size: 11pt;
-	text-align: bottom;
+.logo {
+
+	width: 55%;
+	height: 690px;
+
+	background-color: #ccc;
+	display: inline-block;
+
+	text-align: center;
+
+	color: #444;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+
 }
 
-#wrapper {
-	width: 100%;
+.text {
 
-	margin: 0 auto;
-}
+	width: 45%;
+	height: 690px;
 
-#main {
-	width: 64%;
-	height: 100vh;
+	background-color: #ccc;
+	display: inline-block;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	float: left;
-	background-color: #cccccc;
-}
-
-#text {
-	width: 36%;
-	height: 100vh;
 
 	float: right;
-	background-color: #cccccc;
-
-	display: flex;
-	justify-content: right;
-	align-items: center;
-
-	font-family: 'Slabo 27px', serif;
-	color: #444;
-	font-size: 14pt;
 }
 
 .image-fix {
-	max-width: 100%;
+
+	margin-top: 3%;
+	width: 60%;
 }
 
-@media screen and (max-width: 500px) {
-	#main, #text {
-		float: none;
+.about {
+
+	margin-top: 30%;
+
+	font-family: 'Slabo 27px', serif;
+	font-size: 22px;
+	color: #444;
+
+}
+
+.icon {
+
+	font-size: 28px;
+}
+
+.footer {
+
+	font-family: "Montserrat", sans-serif;
+	color: #444;
+	font-size: 18px;
+}
+
+@media (max-width: 768px){
+
+	.footer {
+
+		text-align: center;
+	}
+
+	.icon {
+
+		text-align: center; 
+		font-size: 35px;
+	}
+
+	.about {
+
+		margin-top: 0;
+		text-align: center; 
+		font-size: 32px;
+	}
+
+	.image-fix {
+		width: 90%;
+	}
+	
+	.logo {
+
 		width: 100%;
 	}
 
-	#text {
-		justify-content: center;
+	.text {
+
+		width: 100%;
 	}
 }
 
-@media screen and (max-width: 1400px) {
-	#text {
-		font-size: 12pt;
+@media (max-width: 480px) {
+
+	.icon {
+
+		text-align: center;
+	}
+
+	.footer {
+
+		text-align: center;
+	}
+
+	.about {
+
+		margin-top: 0;
+		font-size: 30px;
+	}
+	.image-fix {
+
+		width: 95%;
+	}
+
+	.logo {
+
+		width: 100%;
+	}
+
+	.text {
+
+		width: 100%;
 	}
 }
-
-@media screen and (max-width: 360px) {
-	#text {
-		font-size: 11pt;
-	}
-}
-
-.social {
-	width: 120px;
-	list-style: none;
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-}
-
-.social__item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 20px;
-}
-
