@@ -1,51 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Wultes [GitHub]</title>
+<html>
+    <head>
+        <title>Wultes [GitHub]</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Podkova&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".button").on("click", function(){
+                    var value = $(this).attr("data-filter");
+                    if (value == "all"){
+                        $(".filter").show(100);
+                    } else {
+                        $(".filter").not("."+value).hide(100);
+                        $('.filter').filter("."+value).show(100);
+                    }
+                })
+            })
+        </script>
 
-	<script src="assets/js/wow.min.js"></script>
-
-	<script>
-		new WOW().init();
-	</script>
-
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-</head>
-
-<body>
-	
-	<div class="logo">
-		<div class="logo-image wow fadeInDown">
-			<img src="assets/images/pic01_but.jpg" class="image-fix" alt="Wultes Logo">
-			<br>Vladislav Chakhursky "The Bouquet"
-		</div>
-	</div>
-	<div class="text wow fadeInRight">
-		<div class="about">
-			<h1>@Wultes</h1>
-			<p>Web/Python Developer</p>
-			<h2></h2>
-			<p>Kirill Melnikov</p>
-			<p>Russia, Saint-Petersburg</p>
-		</div>
-		<div class="icon">
-			<ul class="social">
-				<li class="social__item"><a href="https://vk.com/wultes"><i class="fa fa-vk"></i></a></li>
-				<li class="social__item"><a href="https://github.com/wultes/"><i class="fa fa-github-square"></i></a></li>
-				<li class="social__item"><a href="https://t.me/wultes"><i class="fa fa-telegram"></i></a></li>
-			</ul>
-		</div>
-		<div class="footer">
-			<p>2020, @Wultes</p>
-		</div>
-	</div>
-
-</body>
+    </head>
+    <body>
+        <div class="profile">
+            <div class="info-profile animated fadeInDown delay-0.5s">
+                <ul class="image">
+                    <li>
+                        <img src="images/profile/profile.jpg" alt="Wultes [GitHub]" class="profile-image">
+                    </li>
+                </ul>
+                <ul class="text-profile">    
+                    <b>Wultes</b><br>
+                    <b><a href="https://github.com/steinteam">「 SteinTeam 」</a></b><br>
+                    <li style="margin-top: 3px;" class="social__item"><a href="https://github.com/wultes/"><i class="fa fa-github-square"></i></a></li>
+                    <li class="social__item"><a href="https://vk.com/wultes"><i class="fa fa-vk"></i></a></li>
+                    <li class="social__item"><a href="https://t.me/wultes"><i class="fa fa-telegram"></i></a></li>
+                </ul>
+            </div>
+            <div class="about animated fadeInUp delay-0.5s">
+                <ul>
+                    <li><i>"Только хороший программист назовет себя быдлокодером"</i></li>
+                    <li>Кирилл Мельников</li>
+                    <li>Web/Python разработчик</li>
+                    <li>Россия, Санкт-Петербург</li>
+                    <li><a href="https://money.yandex.ru/to/4100111894621502">Помощь копейкой</a></li>
+                </ul>
+            </div>
+            <div class="projects animated fadeInUp delay-0.5s">
+                <b>Мои проекты</b>
+                <div class="container">
+                    <ul>
+                        <li class="button active all-li" data-filter="all">All</li>
+                        <li class="button python-li" data-filter="python">Python</li>
+                        <li class="button html-li" data-filter="html">HTML/CSS</li>
+                        <li class="button javascript-li" data-filter="javascript">JavaScript</li>
+                    </ul>
+                    <div class="box filter python">
+                        <b>rename-django-project</b><br>
+                        <span class="about-project">Данный скрипт позволяет переименновать проект Django</span><br><br>
+                        <span class="python-color"></span><span class="name-language">Python</span><br><br><br>
+                        <span><a href="https://github.com/wultes/rename-django-project">Ссылка на репозиторий</a></span>
+                    </div>
+                    <div class="box filter html python">
+                        <b>django-account-app</b><br>
+                        <span>Веб приложение Django для создания аунтификации</span><br><br>
+                        <span class="python-color"></span><span class="name-language">Python</span><br>
+                        <span class="html-color"></span><span class="name-language">HTML/CSS</span><br><br>
+                        <span><a href="https://github.com/wultes/django-account-app">Ссылка на репозиторий</a></span>
+                    </div>
+                    <div class="box filter html javascript">
+                        <b>wultes.github.io</b><br>
+                        <span>Репозиторий этого сайта</span><br><br>
+                        <span class="javascript-color"></span><span class="name-language">JavaScript</span><br>
+                        <span class="html-color"></span><span class="name-language">HTML/CSS</span><br><br><br>
+                        <span><a href="https://github.com/wultes/wultes.github.io">Ссылка на репозиторий</a></span>
+                    </div>
+                    <div class="box filter python html javascript">
+                        <b>django-socialnetwork-project</b><br>
+                        <span>Мини-социальная сеть написанная на Django</span><br><br>
+                        <span class="python-color"></span><span class="name-language">Python</span><br>
+                        <span class="html-color"></span><span class="name-language">HTML/CSS</span><br>
+                        <span class="javascript-color"></span><span class="name-language">JavaScript</span><br>
+                        <span><a href="https://github.com/wultes/django-socialnetwork-project">Ссылка на репозиторий</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>

@@ -1,0 +1,214 @@
+body {
+    background-image: url(images/profile/background.jpg);
+}
+
+.profile {
+    width: 100%;
+}
+
+.info-profile {
+    width: 100%;
+    height: 260px;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+
+    .info-profile ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .info-profile a {
+        text-decoration: none;
+        transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        color: black;
+    }
+
+        a:hover {
+		    color: #49c8ff;
+		    border-bottom-color: transparent;
+	    }
+
+    .info-profile li {
+        color: black;
+        display: inline-block;
+    }
+
+.text-profile {
+    width: 20%;
+    margin-left: 40%;
+    background-color: white;;
+    box-shadow: 4px 4px 0px #c5c6c7;
+    border-radius: 25px;
+}
+
+.social__item {
+    font-size: 25px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 180px;
+
+
+    border: 4px solid rgb(107, 158, 215);
+    border-radius: 50%;
+}
+
+.about {
+    width: 52%;
+    height: 170px;
+    margin-top: 50px;
+    margin-left: 23%;
+
+    text-align: center;
+    background-color: white;
+    box-shadow: 4px 4px 0px #c5c6c7;
+    
+
+    font-family: 'Podkova', serif;
+}
+
+    .about ul {
+        font-size: 26px;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 5px;
+        line-height: 35px;
+    }
+
+    .about i {
+        font-size: 15px;
+    }
+
+    .about li {
+        text-align: center;
+    }
+
+    .about a {
+        font-size:12px;
+        text-decoration: none;
+        transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        color: black;
+    }
+
+        .about a:hover {
+                color: #49c8ff;
+                border-bottom-color: transparent;
+            }
+
+.projects {
+    width: 62%;
+    height: 520px;
+    margin-top: 30px;
+    margin-left: 18%;
+
+    text-align: center;
+    background-color: white;
+    box-shadow: 4px 4px 0px #c5c6c7;   
+
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+    .container ul {
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+
+    .container ul li {
+        float: left;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 25px;
+
+    }
+
+
+    .container .python-li {
+        background-color: #3572A5;
+        box-shadow: 4px 4px 0px rgb(42, 89, 128) ;
+    }
+
+    .container .html-li {
+        background-color: #e34c26;
+        box-shadow: 4px 4px 0px #c44221;
+    }
+
+    .container .javascript-li {
+        background-color: #ddcd50;
+        box-shadow: 4px 4px 0px #beb046;
+    }
+
+    .container .all-li {
+        background-color: #c5c6c7;
+        box-shadow: 4px 4px 0px #a4a4a5;
+    }
+    
+
+    .container .box {
+        width: 22%;
+        height: 180px;
+        margin: 10px;
+        margin-left: 15px;
+        text-align: center;
+        box-sizing: border-box;
+        float: left;
+        border: 2px solid #a4a4a5;
+        box-shadow: 4px 4px 0px #7e7e7e;
+    }
+
+    .container .box span {
+        font-size: 14px;
+    }
+
+    .container .box a {
+        transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        color: black;
+    }
+
+        .container .box a:hover {
+            color: #49c8ff;
+		    border-bottom-color: transparent;
+        }
+
+    .container .python-color {
+        background-color: #3572A5;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        float:left;
+        margin: 5px;
+    }
+
+    .container .javascript-color {
+        background-color: #ddcd50;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        float:left;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .container .html-color {
+        background-color: #e34c26;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        float:left;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .container .name-language {
+        float: left;
+    }
