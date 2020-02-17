@@ -195,7 +195,6 @@ body {
         border-radius: 50%;
         float:left;
         margin: 5px;
-        font-size: 14px;
     }
     
     .container .html-color {
@@ -205,7 +204,6 @@ body {
         border-radius: 50%;
         float:left;
         margin: 5px;
-        font-size: 14px;
     }
 
     .container .name-language {
@@ -232,7 +230,10 @@ body {
   
     .container .box {
         width: 28%;
-        height: 190px;
+    }
+
+    #line-link {
+        margin-top: 22%;
     }
         
 }
