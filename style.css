@@ -116,7 +116,7 @@ body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-    .container ul {
+    .container .filter-box {
         list-style-type: none;
         padding: 0;
         position: relative;
@@ -124,7 +124,7 @@ body {
         height: 50px;
     }
 
-    .container ul li {
+    .container .filter-box li {
         float: left;
         padding: 10px 20px;
         margin: 10px;
@@ -160,7 +160,6 @@ body {
         margin: 10px;
         margin-left: 15px;
         text-align: center;
-        box-sizing: border-box;
         float: left;
         border: 2px solid #a4a4a5;
         box-shadow: 4px 4px 0px #7e7e7e;
@@ -212,3 +211,28 @@ body {
     .container .name-language {
         float: left;
     }
+
+    .container .link-repo {
+        font-size: 14px;
+        margin-top: 10%;
+    }
+
+    .container .language-list {
+        height: 40px;
+        padding: 0;
+        list-style-type: none;
+        display: block;
+    }
+
+    .container .language-list li {
+        display: inline-block;
+        font-size: 14px;
+    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    .container .box {
+        width: 28%;
+        height: 190px;
+    }
+        
+}
