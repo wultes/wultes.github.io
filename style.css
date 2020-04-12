@@ -249,7 +249,7 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   
     .projects {
-        height: 540px;
+        height: 720px;
     }
 
     .container .box {
