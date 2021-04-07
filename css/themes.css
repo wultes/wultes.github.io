@@ -1,0 +1,16 @@
+main {
+    background: rgb(242,112,156);
+    background: -moz-linear-gradient(0deg, rgba(242,112,156,1) 32%, rgba(255,148,114,1) 69%);
+    background: -webkit-linear-gradient(0deg, rgba(242,112,156,1) 32%, rgba(255,148,114,1) 69%);
+    background: linear-gradient(0deg, rgba(242,112,156,1) 32%, rgba(255,148,114,1) 69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2709c",endColorstr="#ff9472",GradientType=1);
+    color: #1E1E1E;
+}
+
+.icons-social a {
+	color: #1E1E1E;
+}
+
+.icons-social a svg path{
+	fill: #1E1E1E;
+}

@@ -1,141 +1,65 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Wultes [GitHub]</title>
-        <meta name="google-site-verification" content="rCYU7e38qjEgyBZBpld34YflsD6OE8c6Whf-dQktOfQ">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="animate.css">
-        <link rel="shortcut icon" href="images/profile/favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Podkova&display=swap" rel="stylesheet">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".button").on("click", function(){
-                    var value = $(this).attr("data-filter");
-                    if (value == "all"){
-                        $(".filter").show(100);
-                    } else {
-                        $(".filter").not("."+value).hide(100);
-                        $('.filter').filter("."+value).show(100);
-                    }
-                })
-            })
-        </script>
+	<title>Kirill Melnikov | Contacts</title>
 
-    </head>
-    <body>
-        <div class="profile">
-            <div class="language-site">
-                <a href="en.html">English</a><a>/</a><a href="index.html">Русский</a>
-            </div>
-            <div class="info-profile animated fadeInDown delay-0.5s">
-                <ul class="image">
-                    <li>
-                        <img src="images/profile/profile.jpg" alt="Wultes [GitHub]" class="profile-image">
-                    </li>
-                </ul>
-                <ul class="text-profile">    
-                    <b>Wultes</b><br>
-                    <b><a href="https://github.com/steinteam">「 SteinTeam 」</a></b><br>
-                    <li style="margin-top: 3px;" class="social__item"><a href="https://github.com/wultes/"><i class="fa fa-github-square"></i></a></li>
-                    <li class="social__item"><a href="https://vk.com/wultes"><i class="fa fa-vk"></i></a></li>
-                    <li class="social__item"><a href="https://t.me/wultes"><i class="fa fa-telegram"></i></a></li>
-                </ul>
-            </div>
-            <div class="about animated fadeInUp delay-0.5s">
-                <ul>
-                    <li><i>"Плохой опыт все равно опыт"</i></li>
-                    <li>Кирилл Мельников</li>
-                    <li>Web/Python разработчик</li>
-                    <li>Россия, Санкт-Петербург</li>
-                    <li><a href="https://money.yandex.ru/to/4100111894621502">Помощь копейкой</a></li>
-                </ul>
-            </div>
-            <div class="projects animated fadeInUp delay-0.5s">
-                <b>Мои проекты</b>
-                <div class="container">
-                    <ul class="filter-box">
-                        <li class="button active all-li" data-filter="all">All</li>
-                        <li class="button python-li" data-filter="python">Python</li>
-                        <li class="button html-li" data-filter="html">HTML/CSS</li>
-                        <li class="button javascript-li" data-filter="javascript">JavaScript</li>
-                    </ul>
-                    <div class="box filter python">
-                        <b>rename-django-project</b><br>
-                        <span class="about-project">Данный скрипт позволяет переименновать проект Django</span>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                        </ul>
-                        <div class="link-repo"><a href="https://github.com/wultes/rename-django-project">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter html python">
-                        <b>account-app</b><br>
-                        <span>Веб приложение Django для создания аунтификации</span>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                            <li><span class="html-color"></span>HTML/CSS</li>
-                        </ul>
-                        <div class="link-repo"><a href="https://github.com/wultes/account-app">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter html javascript">
-                        <b>wultes.github.io</b><br>
-                        <span>Репозиторий этого сайта</span><br><br>
-                        <ul class="language-list">
-                            <li><span class="javascript-color"></span>JavaScript</li>
-                            <li><span class="html-color"></span>HTML/CSS</li>
-                        </ul>
-                        <div id="line-link" class="link-repo"><a href="https://github.com/wultes/wultes.github.io">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter python html javascript">
-                        <b>python-social</b><br>
-                        <span>Мини-социальная сеть написанная на Django</span><br>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                            <li><span class="javascript-color"></span>JavaScript</li>
-                            <li><span class="html-color"></span>HTML/CSS</li>
-                        </ul>
-                        <div id="line-link" class="link-repo"><a href="https://github.com/wultes/python-social">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter python">
-                        <b>vkbotfather</b><br>
-                        <span>Отец для создания ботов в ВК</span><br><br>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                        </ul>
-                        <div class="link-repo"><a href="https://github.com/wultes/vkbotfather">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter python">
-                        <b>snapy</b><br>
-                        <span>Простая змейка написанная с помощью Pygame</span><br>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                        </ul>
-                        <div class="link-repo"><a href="https://github.com/wultes/snapy">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter python">
-                        <b>vkbotsapi</b><br>
-                        <span>Модуль VK API для Python</span><br><br>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                        </ul>
-                        <div class="link-repo"><a href="https://github.com/wultes/vkbotsapi">Ссылка на репозиторий</a></div>
-                    </div>
-                    <div class="box filter python html javascript">
-                        <b>GiStats [Django]</b><br>
-                        <span>Веб-приложение, для вывода стастики GitHub репозиториев</span><br>
-                        <ul class="language-list">
-                            <li><span class="python-color"></span>Python</li>
-                            <li><span class="javascript-color"></span>JavaScript</li>
-                            <li><span class="html-color"></span>HTML/CSS</li>
-                        </ul>
-                        <div class="link-repo"><a href="http://gistats.pythonanywhere.com/">Ссылка на сайт</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body> 
+	<link rel="icon" href="favicon.ico" type="image/png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+	<main>
+		<div class="intro">Kirill Melnikov</div>
+		<div class="tagline">email: workwultes@gmail.com</div>
+		<div class="icons-social">
+			<a target="_blank" href="https://t.me/wultes"><i class="fab fa-telegram"></i></a>
+			<a target="_blank" href="https://github.com/wultes"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://twitter.com/setluw"><i class="fab fa-twitter"></i></a>
+	</main>
+</body>
+<script>
+	const uri = 'https://jsonplaceholder.typicode.com/posts';
+			const initDetails = {
+				method: 'get',
+				headers: {
+					"Content-Type": "application/json; charset=utf-8"
+				},
+				mode: "cors"
+			}
+
+			function GetData() {
+
+				fetch( uri, initDetails )
+					.then( response =>
+					{
+						if ( response.status !== 200 )
+						{
+							console.log( 'Looks like there was a problem. Status Code: ' +
+								response.status );
+							return;
+						}
+
+						console.log( response.headers.get( "Content-Type" ) );
+						return response.json();
+					}
+					)
+					.then( myJson =>
+					{
+						console.log( JSON.stringify( myJson ) );
+					} )
+					.catch( err =>
+					{
+						console.log( 'Fetch Error :-S', err );
+					} );
+			}
+    </script>
+</script>
 </html>
