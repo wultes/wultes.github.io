@@ -26,6 +26,13 @@ html {
 	}
 }
 
+@font-face {
+    font-family: 'Clear Sans';
+    src: local('Clear Sans Thin'), local('ClearSans-Thin'), url('font/clearsansthin.woff2') format('woff2'), url('font/clearsansthin.woff') format('woff'), url('font/clearsansthin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
 .icons-social i {
 	font-size: 3em;
 }
@@ -42,14 +49,21 @@ main {
 }
 
 main > .intro {
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
-	font-weight: 600;
+	font-family: 'Crimson Text', serif;
+	font-size: 4em;
 }
 
 main > .tagline {
+    font-family: 'Clear Sans', Thin;
 	font-size: 1.5rem;
-	margin: 1.5rem 0;
+	margin: 1rem 0;
+	font-weight: 100;
+}
+
+main > .tagline-quote {
+    font-family: 'Clear Sans', Thin;
+	font-size: 1.2rem;
+	padding-top: 4rem;
 	font-weight: 100;
 }
 
